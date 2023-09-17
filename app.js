@@ -9,7 +9,7 @@ const db = require('./config/db');
 dotenv.config();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.render('index');
 });
 
 const myLogger = (req, res, next) => {
