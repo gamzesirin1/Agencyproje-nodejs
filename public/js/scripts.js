@@ -52,3 +52,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+function deleteProject(id) {
+    var r = confirm("Are you sure you want to delete this project?");
+    if (r == true) {
+       
+        window.location.href = "/";
+    }
+}
+
+function updatedProject(id) {
+    var r = confirm("Are you sure you want to update this project?");
+    if (r == true) {
+        window.location.href = "/updateProject/" + id;
+    }
+}
